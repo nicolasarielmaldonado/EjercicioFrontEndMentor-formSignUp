@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+<body>
+
+  <div class="card">
+    <div class="text-container">
+      <h1>Learn to code by watching others</h1>
+      <p class="main-text">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</p>
+    </div>
+    <div class="form-container">
+      <div class="trial-box">
+        <p class="try-text"><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+      </div>
+
+      <form onSubmit="event.preventDefault()">
+        <div class="input-item">
+          <input autocomplete="off" id="input-name" type="text" placeholder="First Name">
+          <img class="error-icon" src="./images/icon-error.svg"/>
+          <p class="error-message" id="name"><em>First name cannot be empty</em></p>
+        </div>
+
+        <div class="input-item">
+          <input autocomplete="off" id="input-lastName" type="text" placeholder="Last Name">
+          <img class="error-icon" src="./images/icon-error.svg"/>
+          <p class="error-message" id="lastName"><em>Last name cannot be empty</em></p>
+        </div>
+
+        <div class="input-item">
+          <input autocomplete="off" id="input-email" type="text" placeholder="Email Address">
+          <img class="error-icon" src="./images/icon-error.svg"/>
+          <p class="error-message" id="email"><em>Looks like this is not an email</em></p>
+        </div>
+
+        <div class="input-item">
+          <input autocomplete="off" id="input-password" type="text" placeholder="Password">
+          <img class="error-icon" src="./images/icon-error.svg"/>
+          <p class="error-message" id="password"><em>Password must have at least 8 characters</em></p>
+        </div>
+        <div class="input-item">
+          <input class="button-submit" id="button-submit" type="submit" value="CLAIM YOUR FREE TRIAL">
+        </div>
+        <div class="terms-text">By clicking the button, you are agreeing to our <span class="terms-hyper">Terms and Services</span></div>
+      </form>
+      
+    </div>
+  </div>  
+
+  <script src="main.js"></script>
+
+</body>
+</html>
